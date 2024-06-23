@@ -59,6 +59,12 @@ a:has(.fa-solid.fa-angle-right) {
   background-color: #579624;
   transition: 0.2s ease-in-out;
 }
+.content-blog:nth-of-type(1) h3,
+.content-blog:nth-of-type(2) h3 {
+  line-height: 1.5em;
+  height: 4.5em;
+  overflow: hidden;
+}
 /* ------------------------------- RESPONSIVE ------------------------------- */
 @media (max-width: 1080px) {
   .blog {
