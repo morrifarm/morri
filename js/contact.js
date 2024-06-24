@@ -87,11 +87,11 @@ btnSubmit.addEventListener("mouseup", (e) => {
     document.getElementById("close-popup").addEventListener("click", () => {
       document.body.removeChild(popup);
       document.getElementById("overlay").style.display = "none";
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
 });
 document.addEventListener("DOMContentLoaded", () => {
- 
   gsap.registerPlugin(ScrollTrigger);
   console.log("ScrollTrigger và GSAP đã được khởi tạo");
 
@@ -108,5 +108,4 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 1,
     ease: "power1.inOut",
   });
-  
 });

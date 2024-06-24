@@ -81,6 +81,7 @@ btnSubmit.addEventListener("mouseup", (e) => {
     document.getElementById("close-popup").addEventListener("click", () => {
       document.body.removeChild(popup);
       document.getElementById("overlay").style.display = "none";
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
 });
